@@ -268,12 +268,10 @@ padding:0px;
   .logo {
     display: flex;
   }
-
-  .profile_icons {
+  .profile_icons{
     display: flex;
-    /* flex-direction: column; */
-    margin: auto;
-    flex: 50% 0 0;
+    flex-direction:row;
+    margin:auto;
   }
 
 .right{
@@ -286,19 +284,6 @@ left: 0px;
 top: 300px;
 
 }
-
-
-/* 
-.first_container{
-  display:flex;
-  flex-wrap: wrap;
-} */
-
-/* .container_second{
-
-  display:flex;
-  flex: 50% 0 0;
-}  */
 
 
 }
