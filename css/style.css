@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  /* height: 100vh; */
+  margin: 40px 0px;
+  padding: 0px 60px;
+  overflow-x: hidden;
+}
+
+
+h3{
+text-transform: capitalize;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+}
+
+.container .sidebar {
+  display: none;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(41, 40, 40);
+}
+
+span {
+  color: blue;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 15vw;
+}
+
+.navbar li {
+  font-size: 1.5rem;
+  list-style: none;
+  text-transform: capitalize;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.search {
+  border: none;
+  outline: none;
+  background-color: rgb(224 224 224 / 60%);
+  margin-left: 10px;
+  border-radius: 30px;
+}
+.far {
+  margin-left: 10px;
+}
+
+.search_input {
+  background-color: rgb(224 224 224 / 60%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section {
+  margin-top: 80px;
+}
+
+.main-section h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.main_hero_para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section p {
+  font-size: 25px;
+  color: rgba(138, 126, 126, 0.966);
+  font-weight: lighter;
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none !important;
+  background-color: blue;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* second part************************************************ */
+.second_section {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding:0px 10px;
+}
+
+
+.left_image img {
+  border-radius: 30px;
+  width: 100%;
+  height: 450px;
+}
+
+.right_part {
+  padding: 20px 30px;
+  box-shadow: rgb(0 0 0 / 55%) 11px 4px 45px 0px;
+  min-height: 275px;
+z-index: 99;
+background-color:#ffff;
+  border-radius: 30px;
+  /* margin-top: -70px; */
+}
+
+.right_part h3,
+h1,
+p {
+  margin-top: 10px;
+}
+
+.social_icons {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.fab {
+  padding: 0px 15px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 650px;
+  right: 0px;
+  z-index: 50;
+}
+
+/* third part ********************************* */
+
+.thirdpart {
+  color:white;
+  background-color: blue;
+  margin-top: 100px;
+  border-radius:20px ;
+  box-shadow: rgb(0 0 0 / 55%) 11px 4px 45px 0px;
+}
+.container_second h1{
+  margin-bottom:0px ;
+}
+
+.container_second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+
+}
+
+.profile_icons{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+}
+
+.profile{
+  margin:auto;
+  padding: 1rem 1rem;
+} 
+
+.profile img{
+  width: 70px;
+  border-radius:50%;
+}
+
+.first_container{
+  display:flex;
+  /* background-color:orange; */
+  flex-wrap: wrap;
+}
+
+.second_container{
+  flex-wrap: wrap;
+  display:flex;
+  /* background-color:yellow; */
+}
+
+ /* **********************************  media query ******************************* */
+
+
+@media only screen and (max-width: 600px) {
+
+body {
+padding:0px;
+}
+
+  .navbar {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .search_input {
+    display: flex;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .left_image img {
+    border-radius: 30px;
+    width: 100%;
+    height: 450px;
+}
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container .sidebar {
+    display: inline-block;
+  }
+  
+  .container .sidebar {
+    margin-right: 25px;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .profile_icons {
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+    flex: 50% 0 0;
+  }
+
+.right{
+top: 400px;
+left: 0px;
+}
+
+.thirdpart{
+  position: relative;
+top: 300px;
+
+}
+
+
+/* 
+.first_container{
+  display:flex;
+  flex-wrap: wrap;
+} */
+
+/* .container_second{
+
+  display:flex;
+  flex: 50% 0 0;
+}  */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
